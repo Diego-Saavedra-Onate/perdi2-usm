@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "678123063532",
+    "project_id": "apps-perdi2-usm-dam",
+    "storage_bucket": "apps-perdi2-usm-dam.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678123063532:android:d3f773c8c2cf2ae3327dc9",
+        "android_client_info": {
+          "package_name": "com.proyectodaw.perdi2_usm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678123063532-db98mjbq9lmk19952sq3k7ekn3761f1a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.proyectodaw.perdi2_usm",
+            "certificate_hash": "fd8260380e9871dadc8cae1dd7082ce9699a5bd5"
+          }
+        },
+        {
+          "client_id": "678123063532-23b2dmqc6r9p4md2volcm8nq9p264m42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp2o47RGMJhNeP1JCMi1HXJqmKpNTrLsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678123063532-23b2dmqc6r9p4md2volcm8nq9p264m42.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
