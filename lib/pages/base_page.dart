@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
 import 'package:perdi2_usm/constants.dart';
+import 'package:perdi2_usm/pages/tabs/tab_publicar.dart';
 import 'package:perdi2_usm/services/auth_service.dart';
 
 class BasePage extends StatefulWidget {
@@ -100,7 +101,7 @@ class _BasePageState extends State<BasePage> {
             children: [
               Center(child: Text('Nivel 4: Mis reportes')),
               Center(child: Text('Nivel 3: Todas las publicaciones')),
-              Center(child: Text('Nivel 2: Crear publicación')),
+              TabPublicar(),
             ],
           ),
         ),
