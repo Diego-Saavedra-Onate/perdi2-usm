@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
 import 'package:perdi2_usm/constants.dart';
+import 'package:perdi2_usm/pages/tabs/tab_mis_reportes.dart';
 import 'package:perdi2_usm/pages/tabs/tab_publicaciones.dart';
 import 'package:perdi2_usm/pages/tabs/tab_publicar.dart';
 import 'package:perdi2_usm/services/auth_service.dart';
@@ -99,11 +100,7 @@ class _BasePageState extends State<BasePage> {
         body: const Padding(
           padding: EdgeInsets.all(5.0),
           child: TabBarView(
-            children: [
-              Center(child: Text('Nivel 4: Mis reportes')),
-              TabPublicaciones(),
-              TabPublicar(),
-            ],
+            children: [TabMisReportes(), TabPublicaciones(), TabPublicar()],
           ),
         ),
       ),
