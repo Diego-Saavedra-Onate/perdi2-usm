@@ -22,7 +22,7 @@ class _PagMainState extends State<PagMain> {
         width: double.infinity,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [kPrimaryColor, Color(0xFF002644)],
+            colors: [kPrimaryColor, kSecondaryColor, kBackgroundColor],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -38,19 +38,23 @@ class _PagMainState extends State<PagMain> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(MdiIcons.compassOutline, size: 64, color: kPrimaryColor),
+                Icon(
+                  MdiIcons.compassOutline,
+                  size: 64,
+                  color: const Color(0xFFD60019),
+                ),
                 const SizedBox(height: 12),
                 const Text(
-                  'perdi2_usm',
+                  'Perdi2 USM',
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.bold,
-                    color: kPrimaryColor,
+                    color: Color(0xFFD60019),
                   ),
                 ),
                 const SizedBox(height: 12),
                 Text(
-                  'Bienvenido a la red de objetos perdidos y encontrados de la Universidad Técnica Federico Santa María. Publica reportes con foto, filtra por categoría y ayuda a devolver pertenencias en tu campus.',
+                  'Bienvenido a la red de objetos perdidos y encontrados de la USM. Publica reportes con foto, filtra por categoría y ayuda a devolver pertenencias en tu campus.',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 14,
@@ -86,7 +90,7 @@ class _PagMainState extends State<PagMain> {
                             }
                           },
                           style: FilledButton.styleFrom(
-                            backgroundColor: kPrimaryColor,
+                            backgroundColor: const Color(0xFFD60019),
                           ),
                           icon: Icon(MdiIcons.google, color: Colors.white),
                           label: const Text(
