@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class FsService {
-  // Obtener categorías ordenadas alfabéticamente para el Dropdown y filtros
   Future<QuerySnapshot> categorias() {
     return FirebaseFirestore.instance
         .collection('categorias')
@@ -9,7 +8,6 @@ class FsService {
         .get();
   }
 
-  // Obtener todas las publicaciones en tiempo real (Nivel 3)
   Stream<QuerySnapshot> publicaciones() {
     return FirebaseFirestore.instance
         .collection('publicaciones')
@@ -17,7 +15,6 @@ class FsService {
         .snapshots();
   }
 
-  // Obtener solo las publicaciones del usuario conectado (Nivel 4)
   Stream<QuerySnapshot> misPublicaciones(String uid) {
     return FirebaseFirestore.instance
         .collection('publicaciones')
@@ -25,7 +22,6 @@ class FsService {
         .snapshots();
   }
 
-  // Agregar una nueva publicación (Nivel 2)
   Future<void> agregarPublicacion({
     required String titulo,
     required String descripcion,
@@ -42,8 +38,8 @@ class FsService {
       'descripcion': descripcion,
       'lugar': lugar,
       'categoria': categoria,
-      'estado': estado, // 'Perdido' o 'Encontrado'
-      'motivo': 'No devuelto', // Valor inicial por defecto
+      'estado': estado,
+      'motivo': 'No devuelto',
       'fotoBase64': fotoBase64,
       'autorUid': autorUid,
       'autorNombre': autorNombre,
@@ -52,7 +48,6 @@ class FsService {
     });
   }
 
-  // Editar estado y motivo de una publicación propia (Nivel 4)
   Future<void> editarEstadoMotivo(String id, String estado, String motivo) {
     return FirebaseFirestore.instance
         .collection('publicaciones')
@@ -60,7 +55,6 @@ class FsService {
         .update({'estado': estado, 'motivo': motivo});
   }
 
-  // Borrar una publicación propia (Nivel 4)
   Future<void> borrarPublicacion(String id) {
     return FirebaseFirestore.instance
         .collection('publicaciones')

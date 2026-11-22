@@ -91,7 +91,6 @@ class _TabPublicarState extends State<TabPublicar> {
             ),
             const SizedBox(height: 16),
 
-            // Selector de Estado (Perdido / Encontrado)
             DropdownButtonFormField<String>(
               initialValue: estadoSeleccionado,
               decoration: const InputDecoration(
@@ -151,7 +150,6 @@ class _TabPublicarState extends State<TabPublicar> {
             ),
             const SizedBox(height: 12),
 
-            // Lugar de encuentro / pérdida
             TextFormField(
               controller: lugarCtrl,
               decoration: const InputDecoration(
@@ -168,7 +166,6 @@ class _TabPublicarState extends State<TabPublicar> {
             ),
             const SizedBox(height: 12),
 
-            // Categoría cargada desde Firestore
             FutureBuilder(
               future: FsService().categorias(),
               builder: (context, snapshot) {
@@ -207,7 +204,6 @@ class _TabPublicarState extends State<TabPublicar> {
             ),
             const SizedBox(height: 16),
 
-            // Sección de Fotografía (Cámara o Galería)
             const Text(
               'Fotografía del objeto',
               style: TextStyle(
@@ -237,7 +233,6 @@ class _TabPublicarState extends State<TabPublicar> {
             ),
             const SizedBox(height: 10),
 
-            // Previsualización de la foto seleccionada
             if (fotoBytes != null)
               ClipRRect(
                 borderRadius: BorderRadius.circular(10),

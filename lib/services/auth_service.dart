@@ -30,7 +30,6 @@ class AuthService {
 
       return await FirebaseAuth.instance.signInWithCredential(credential);
     } on GoogleSignInException catch (e) {
-      // Si el usuario cierra la ventana de selección de cuenta, no lo tratamos como error
       if (e.code == GoogleSignInExceptionCode.canceled) {
         return null;
       }

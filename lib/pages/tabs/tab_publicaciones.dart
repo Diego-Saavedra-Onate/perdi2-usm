@@ -20,7 +20,6 @@ class _TabPublicacionesState extends State<TabPublicaciones> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        // Barra superior de filtro por categoría desde Firestore
         Container(
           margin: const EdgeInsets.fromLTRB(6, 6, 6, 4),
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
@@ -69,7 +68,6 @@ class _TabPublicacionesState extends State<TabPublicaciones> {
           ),
         ),
 
-        // Listado en tiempo real de publicaciones
         Expanded(
           child: StreamBuilder<QuerySnapshot>(
             stream: FsService().publicaciones(),

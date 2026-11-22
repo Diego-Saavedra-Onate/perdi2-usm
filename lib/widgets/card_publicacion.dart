@@ -51,7 +51,6 @@ class CardPublicacion extends StatelessWidget {
           padding: const EdgeInsets.all(10),
           child: Row(
             children: [
-              // Miniatura de la foto
               ClipRRect(
                 borderRadius: BorderRadius.circular(8),
                 child: fotoBytes != null
@@ -73,7 +72,6 @@ class CardPublicacion extends StatelessWidget {
               ),
               const SizedBox(width: 12),
 
-              // Información principal
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
