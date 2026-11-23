@@ -10,12 +10,10 @@ class CardPublicacion extends StatelessWidget {
     super.key,
     required this.publicacion,
     required this.onTap,
-    this.trailing,
   });
 
   final QueryDocumentSnapshot publicacion;
   final VoidCallback onTap;
-  final Widget? trailing;
 
   Uint8List? _decodificarFoto(String? base64String) {
     if (base64String == null || base64String.isEmpty) return null;
@@ -171,7 +169,6 @@ class CardPublicacion extends StatelessWidget {
                   ],
                 ),
               ),
-              if (trailing != null) trailing!,
             ],
           ),
         ),

@@ -287,11 +287,6 @@ class _TabMisReportesState extends State<TabMisReportes> {
                     ),
                   );
                 },
-                trailing: IconButton(
-                  tooltip: 'Editar estado / motivo',
-                  onPressed: () => _mostrarDialogoEditar(pub),
-                  icon: Icon(MdiIcons.pencilBoxOutline, color: kPrimaryColor),
-                ),
               ),
             );
           },
