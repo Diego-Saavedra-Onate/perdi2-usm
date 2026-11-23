@@ -43,18 +43,7 @@ class _BasePageState extends State<BasePage> {
               ),
             ),
           ),
-          leading: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: CircleAvatar(
-              backgroundColor: kSecondaryColor,
-              backgroundImage: user?.photoURL != null
-                  ? NetworkImage(user!.photoURL!)
-                  : null,
-              child: user?.photoURL == null
-                  ? Icon(MdiIcons.account, color: Colors.white)
-                  : null,
-            ),
-          ),
+          leading: Icon(MdiIcons.accountCircle, size: 30, color: Colors.white),
           title: Text(
             user?.displayName ?? user?.email ?? 'Cargando usuario...',
             style: const TextStyle(color: Colors.white, fontSize: 18),
