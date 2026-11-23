@@ -45,23 +45,14 @@ class _PagMainState extends State<PagMain> {
                 ),
                 const SizedBox(height: 12),
                 const Text(
-                  'Perdi2 USM',
+                  'Bienvenido ingrese un correo ',
                   style: TextStyle(
-                    fontSize: 26,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: Color(0xFFD60019),
                   ),
                 ),
-                const SizedBox(height: 12),
-                Text(
-                  'Bienvenido a la red de objetos perdidos y encontrados de la USM. Publica reportes con foto, filtra por categoría y ayuda a devolver pertenencias en tu campus.',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 14,
-                    color: Colors.grey.shade700,
-                    height: 1.4,
-                  ),
-                ),
+
                 const SizedBox(height: 24),
                 cargando
                     ? const CircularProgressIndicator(color: kPrimaryColor)

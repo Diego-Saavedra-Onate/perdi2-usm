@@ -229,16 +229,11 @@ class _TabMisReportesState extends State<TabMisReportes> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    MdiIcons.folderOpenOutline,
+                    MdiIcons.fileDocumentOutline,
                     size: 60,
                     color: Colors.grey.shade400,
                   ),
                   const SizedBox(height: 12),
-                  Text(
-                    'Aún no has creado publicaciones.\nVe a la pestaña "Publicar" para crear tu primer reporte.',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 15, color: Colors.grey.shade600),
-                  ),
                 ],
               ),
             ),
